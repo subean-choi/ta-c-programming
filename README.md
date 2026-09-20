@@ -1,2 +1,23 @@
-# ta-c-programming
-Public teaching assistant notes for C programming
+# C Programming — Teaching Assistant
+
+C 프로그래밍 TA 세션에서 다룬 공개 가능한 학습 주제를 정리한 저장소입니다.
+
+## Session Flow
+
+1. 핵심 개념 복습
+2. 예제 기반 실습
+3. 질의응답과 오류 분석
+
+## Topics
+
+- 자료형과 형 변환
+- 문자와 문자열
+- 표준 입력 함수
+- 조건문과 반복문
+- 함수, 반환형, 매개변수
+- 배열과 포인터 기초
+- 컴파일 경고 확인
+
+## Privacy
+
+학생 이름·학번·연락처·점수·채점표·일정·오픈채팅·Discord·수업 링크와 시험 문제는 포함하지 않습니다.
