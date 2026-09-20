@@ -1,35 +1,35 @@
 # C언어 프로그래밍(1) TA
 
 ✉️ [redacted email]
-			📱 [redacted phone]
-			✉️ [redacted email]
-										## ☘️ TA 운영 계획
-	
-	
-		### 📖 TA 세션
-				💬 **c언어 프로그래밍(1) ta 오픈 채팅방**
-					💻 **c언어 프로그래밍(1) ta Discord**
-		---
-		### 📘 Embedded System Online judge
-		[http://eseoj.inu.ac.kr/JudgeOnline/](http://eseoj.inu.ac.kr/JudgeOnline/)
-					
+📱 [redacted phone]
+✉️ [redacted email]
+## ☘️ TA 운영 계획
 
 
-	
-		### 1️⃣ 복습
-				⏰ 대략 1시간 이상
-		📄 월요일 배운 내용들 복습
-	
-	
-		### 2️⃣ 실습
-				⏰ 복습 후 나머지 시간
-		📄 복습 내용 실습
-		→ 온라인 저지 사용
-	
-	
-		### 3️⃣ 질의 응답
-				⏰ 이외 모든 시간
-			
+### 📖 TA 세션
+💬 **c언어 프로그래밍(1) ta 오픈 채팅방**
+💻 **c언어 프로그래밍(1) ta Discord**
+---
+### 📘 Embedded System Online judge
+[http://eseoj.inu.ac.kr/JudgeOnline/](http://eseoj.inu.ac.kr/JudgeOnline/)
+
+
+
+
+### 1️⃣ 복습
+⏰ 대략 1시간 이상
+📄 월요일 배운 내용들 복습
+
+
+### 2️⃣ 실습
+⏰ 복습 후 나머지 시간
+📄 복습 내용 실습
+→ 온라인 저지 사용
+
+
+### 3️⃣ 질의 응답
+⏰ 이외 모든 시간
+
 
 ### 📅 Calendar
 > Notion database:  C언어 프로그래밍 일정
@@ -86,19 +86,19 @@
 ```c
 int main()
 {
-	int input;
-	int o_cnt = 0, e_cnt = 0; // odd 홀수, even 짝수
-	
-	while (1)
-	{
-		scanf("%d", &input);
-		if (input == 0)break;
-		if (input % 2 == 0) e_cnt++;
-		else if (input % 2 != 0)o_cnt++;
-	}
+int input;
+int o_cnt = 0, e_cnt = 0; // odd 홀수, even 짝수
 
-	printf("%d %d", e_cnt, o_cnt);
-	return 0;
+while (1)
+{
+scanf("%d", &input);
+if (input == 0)break;
+if (input % 2 == 0) e_cnt++;
+else if (input % 2 != 0)o_cnt++;
+}
+
+printf("%d %d", e_cnt, o_cnt);
+return 0;
 }
 ```
 ### 2번
@@ -106,20 +106,20 @@ int main()
 ```c
 int main()
 {
-	int num1, num2, num3;
-	scanf("%d %d %d", &num1, &num2, &num3);
+int num1, num2, num3;
+scanf("%d %d %d", &num1, &num2, &num3);
 
-	int max = num1;
-	int min = num1;
+int max = num1;
+int min = num1;
 
-	if (max < num2)max = num2;
-	if (max < num3)max = num3;
+if (max < num2)max = num2;
+if (max < num3)max = num3;
 
-	if (min > num2)min = num2;
-	if (min > num3)min = num3;
+if (min > num2)min = num2;
+if (min > num3)min = num3;
 
-	printf("%d %d", max, min);
-	return 0;
+printf("%d %d", max, min);
+return 0;
 }
 ```
 ### 3번
@@ -127,22 +127,22 @@ int main()
 ```c
 int main()
 {
-	int num1, num2, num3, num4;
-	scanf("%d %d %d %d", &num1, &num2, &num3, &num4);
+int num1, num2, num3, num4;
+scanf("%d %d %d %d", &num1, &num2, &num3, &num4);
 
-	int min = num1;
-	int max = num1;
+int min = num1;
+int max = num1;
 
-	if (max < num2)max = num2;
-	if (max < num3)max = num3;
-	if (max < num4)max = num4;
+if (max < num2)max = num2;
+if (max < num3)max = num3;
+if (max < num4)max = num4;
 
-	if (min > num2)min = num2;
-	if (min > num3)min = num3;
-	if (min > num4)min = num4;
+if (min > num2)min = num2;
+if (min > num3)min = num3;
+if (min > num4)min = num4;
 
-	printf("%d %d", max, min);
-	return 0;
+printf("%d %d", max, min);
+return 0;
 }
 
 ```
@@ -151,24 +151,24 @@ int main()
 ```c
 int main()
 {
-	int num1, num2;
-	scanf("%d %d", &num1, &num2);
-	int sum = 0;
+int num1, num2;
+scanf("%d %d", &num1, &num2);
+int sum = 0;
 
-	for (int i = num1 + 1; i < num2; i++) {
-		int check = 0;
-		for (int j = 2; j < i; j++) {
-			if (i % j == 0) {
-				check++;
-			}
-		}
-		if (check == 0) {
-			sum = sum + i;
-		}
-	}
+for (int i = num1 + 1; i < num2; i++) {
+int check = 0;
+for (int j = 2; j < i; j++) {
+if (i % j == 0) {
+check++;
+}
+}
+if (check == 0) {
+sum = sum + i;
+}
+}
 
-	printf("%d", sum);
-	return 0;
+printf("%d", sum);
+return 0;
 }
 ```
 ### 5번
@@ -177,15 +177,15 @@ int main()
 
 int main()
 {
-	int num;
-	scanf("%d",&num);
+int num;
+scanf("%d",&num);
 
-	while (num > 0)
-	{
-		printf("%d", num % 10);
-		num = num / 10;
-	}
-	return 0;
+while (num > 0)
+{
+printf("%d", num % 10);
+num = num / 10;
+}
+return 0;
 }
 ```
 ### 6번
@@ -193,29 +193,29 @@ int main()
 ```c
 int main()
 {
-	int num;
-	scanf("%d", &num);
-	int fac = 1;
-	int cnt = 0;
+int num;
+scanf("%d", &num);
+int fac = 1;
+int cnt = 0;
 
-	//fac구하기
-	for (int i = 1; i <= num; i++) {
-		fac = fac * i;
-	}
+//fac구하기
+for (int i = 1; i <= num; i++) {
+fac = fac * i;
+}
 
-	//소수 구하기
-	for (int i = 2; i < fac; i++) {
-		int check = 0;
-		for (int j = 2; j < i; j++) {
-			if (i % j == 0)check++;
-		}
-		if (check == 0) {
-			cnt++;
-		}
-	}
+//소수 구하기
+for (int i = 2; i < fac; i++) {
+int check = 0;
+for (int j = 2; j < i; j++) {
+if (i % j == 0)check++;
+}
+if (check == 0) {
+cnt++;
+}
+}
 
-	printf("%d", cnt);
-	return 0;
+printf("%d", cnt);
+return 0;
 }
 ```
 ### 7번
@@ -223,26 +223,26 @@ int main()
 ```c
 int main()
 {
-	int num;
-	scanf("%d", &num);
-	int cnt = 0;
-	int fibo;
+int num;
+scanf("%d", &num);
+int cnt = 0;
+int fibo;
 
-	int ppre = 0;
-	int pre = 1;
+int ppre = 0;
+int pre = 1;
 
-	if (num != 0) {
-		cnt++;
-	}
-	while (pre < num) {
-		fibo = pre + ppre;
-		ppre = pre;
-		pre = fibo;
+if (num != 0) {
+cnt++;
+}
+while (pre < num) {
+fibo = pre + ppre;
+ppre = pre;
+pre = fibo;
 
-		cnt++;
-	}
-	printf("%d", cnt);
-	return 0;
+cnt++;
+}
+printf("%d", cnt);
+return 0;
 }
 ```
 ### 8번
@@ -250,17 +250,17 @@ int main()
 ```c
 int main()
 {
-	int num;
-	scanf("%d", &num);
+int num;
+scanf("%d", &num);
 
-	for (int i = num; i >1; i--) {
-		int sum = 0;
-		for (int j = 1; j <= i; j++) {
-			sum = sum + j;
-		}
-		printf("%d ", sum);
-	}
-	return 0;
+for (int i = num; i >1; i--) {
+int sum = 0;
+for (int j = 1; j <= i; j++) {
+sum = sum + j;
+}
+printf("%d ", sum);
+}
+return 0;
 }
 ```
 ### 9번
@@ -268,37 +268,37 @@ int main()
 ```c
 int main()
 {
-	int num;
-	scanf("%d", &num);
+int num;
+scanf("%d", &num);
 
-	int n1 = 0;
-	int n2=999999;
-	for (int i = 2; i < num; i++) {
-		int check = 0;
-		for (int j = 2; j < i; j++) {
-			if (i % j == 0)check++;
-		}
-		if (check == 0) {
-			if (n1 < i)n1 = i;
-		}
-	}
+int n1 = 0;
+int n2=999999;
+for (int i = 2; i < num; i++) {
+int check = 0;
+for (int j = 2; j < i; j++) {
+if (i % j == 0)check++;
+}
+if (check == 0) {
+if (n1 < i)n1 = i;
+}
+}
 
-	for (int i = num+1; i < num + (num - n1); i++) {
-		int check = 0;
-		for (int j = 2; j < i; j++) {
-			if (i % j == 0)check++;
-		}
-		if (check == 0) {
-			if (n2 > i)n2 = i;
-		}
-	}
-	if (n2 != 999999) {
-		printf("%d", n2);
-	}
-	else {
-		printf("%d", n1);
-	}
-	return 0;
+for (int i = num+1; i < num + (num - n1); i++) {
+int check = 0;
+for (int j = 2; j < i; j++) {
+if (i % j == 0)check++;
+}
+if (check == 0) {
+if (n2 > i)n2 = i;
+}
+}
+if (n2 != 999999) {
+printf("%d", n2);
+}
+else {
+printf("%d", n1);
+}
+return 0;
 }
 ```
 ### 10번
@@ -307,17 +307,17 @@ int main()
 //10번
 int main()
 {
-	int N, A;
-	scanf("%d %d", &N, &A);
-	int cnt = 0;
+int N, A;
+scanf("%d %d", &N, &A);
+int cnt = 0;
 
-	for (int i = 1; i <= N; i++) {
-		for (int j = i; j > 0; j = j / 10) {
-			if (j % 10 == A)cnt++;
-		}
-	}
-	printf("%d", cnt);
-	return 0;
+for (int i = 1; i <= N; i++) {
+for (int j = i; j > 0; j = j / 10) {
+if (j % 10 == A)cnt++;
+}
+}
+printf("%d", cnt);
+return 0;
 }
 ```
 
@@ -329,129 +329,129 @@ int main()
 ```javascript
 int main()
 {
-	int num;
-	scanf("%d",&num);
+int num;
+scanf("%d",&num);
 
-	int max = 0;
-	int cnt_s = 0;
-	
-	for (int i = 2; i <= num; i++) {
-		int cnt = 0;
-		for (int j = 2; j < i; j++) {
-			if (i % j == 0)cnt++;
-		}
-		if (cnt == 0) {
-			if (max < i) {
-				max = i;
-			}
-			cnt_s++;
-		}
-	}
-	printf("%d", cnt_s + max);
+int max = 0;
+int cnt_s = 0;
+
+for (int i = 2; i <= num; i++) {
+int cnt = 0;
+for (int j = 2; j < i; j++) {
+if (i % j == 0)cnt++;
+}
+if (cnt == 0) {
+if (max < i) {
+max = i;
+}
+cnt_s++;
+}
+}
+printf("%d", cnt_s + max);
 }
 ```
 ### 2번
 ```javascript
 int main()
 {
-	int num, num1;
-	scanf("%d %d", &num, &num1);
-	int cnt = 0;
+int num, num1;
+scanf("%d %d", &num, &num1);
+int cnt = 0;
 
-	for (int i = 0; i <= num1; i++) {
-		int check = 0;
-		for (int j = i; j > 0; j = j/10) {
-			if ((j%10) == num) {
-				check++;
-			}
-		}
-		if (check != 0) {
-			//printf("%d ", i);
-			cnt++;
-		}
-	}
+for (int i = 0; i <= num1; i++) {
+int check = 0;
+for (int j = i; j > 0; j = j/10) {
+if ((j%10) == num) {
+check++;
+}
+}
+if (check != 0) {
+//printf("%d ", i);
+cnt++;
+}
+}
 
-	printf("%d", cnt);
+printf("%d", cnt);
 }
 ```
 ### 3번
 ```javascript
 int main() {
-	int num;
-	int cnt = 0;
-	scanf("%d", &num);
+int num;
+int cnt = 0;
+scanf("%d", &num);
 
-	while (num > 0) {
-		if (cnt % 2 != 0) {
-			printf("%d", num % 10);
-		}
-		num /= 10;
-		cnt++;
-	}
-	printf("\n");
+while (num > 0) {
+if (cnt % 2 != 0) {
+printf("%d", num % 10);
+}
+num /= 10;
+cnt++;
+}
+printf("\n");
 
-	return 0;
+return 0;
 }
 ```
 ### 4번
 ```javascript
 int main()
 {
-	int num;
-	int max = 0, min = 9999;
+int num;
+int max = 0, min = 9999;
 
-	while (1) {
-		scanf("%d", &num);
-		if (num == 0)break;
+while (1) {
+scanf("%d", &num);
+if (num == 0)break;
 
-		if (max < num)max = num;
-		if (min > num)min = num;
-	}
+if (max < num)max = num;
+if (min > num)min = num;
+}
 
-	int a = max - min;
-	int b;
+int a = max - min;
+int b;
 
-	int pre = 1, prepre = 0;
-	if (a == 0)printf("%d", 0);
-	else if (a == 1)printf("%d", 1);
-	else {
-		for (int i = 2; i <= a; i++) {
-			b = pre + prepre;
-			prepre = pre;
-			pre = b;
-		}
-		printf("%d\n", a);
-		printf("%d", b);
-	}
+int pre = 1, prepre = 0;
+if (a == 0)printf("%d", 0);
+else if (a == 1)printf("%d", 1);
+else {
+for (int i = 2; i <= a; i++) {
+b = pre + prepre;
+prepre = pre;
+pre = b;
+}
+printf("%d\n", a);
+printf("%d", b);
+}
 }
 ```
 ### 5번
 ```javascript
 int fac(int a)
 {
-	int ans = 1;
-	for (int i = 1; i <= a; i++) {
-		ans = ans * i;
-	}
-	return ans;
+int ans = 1;
+for (int i = 1; i <= a; i++) {
+ans = ans * i;
+}
+return ans;
 }
 
 int main()
 {
-	char c;
-	int cA = 0;
-	int ca = 0;
+char c;
+int cA = 0;
+int ca = 0;
 
-	while (1)
-	{
-		scanf("%c", &c);
-		if (c == '@')break;
-		if (c >= 'a' && c <= 'z')ca++;
-		else if (c >= 'A' && c <= 'Z')cA++;
-	}
+while (1)
+{
+scanf("%c", &c);
+if (c == '@')break;
+if (c >= 'a' && c <= 'z')ca++;
+else if (c >= 'A' && c <= 'Z')cA++;
+}
 
-	//printf("%d %d %d %d", ca,cA,fac(ca),fac(cA));
-	printf("%d", fac(cA) + fac(ca));
+//printf("%d %d %d %d", ca,cA,fac(ca),fac(cA));
+printf("%d", fac(cA) + fac(ca));
 }
 ```
 ### 6번
@@ -461,15 +461,15 @@ int b;
 
 int add()
 {
-	return a + b;
+return a + b;
 }
 
 int main()
 {
-	scanf("%d %d", &a,&b);
-	printf("%d", add());
-	
-	return 0;
+scanf("%d %d", &a,&b);
+printf("%d", add());
+
+return 0;
 }
 
 ```
@@ -477,25 +477,25 @@ int main()
 ```javascript
 int whoMax(int a)
 {
-	static int max = 0;
+static int max = 0;
 
-	if(max < a){
-		max = a;
-	}
+if(max < a){
+max = a;
+}
 
-	return max;
+return max;
 }
 
 int main()
 {
-	int num;
-	int a;
-	while (1) {
-		scanf("%d", &num);
-		if (num == 999)break;
-		else a=whoMax(num);
-	}
-	printf("%d", a);
+int num;
+int a;
+while (1) {
+scanf("%d", &num);
+if (num == 999)break;
+else a=whoMax(num);
+}
+printf("%d", a);
 }
 ```
 ### 8번
@@ -503,25 +503,25 @@ int main()
 //7번
 int mul(int a)
 {
-	static int sum = 1;
-	if (a == 0) {
-		return sum;
-	}
-	else {
-		sum = sum * a;
-		return 0;
-	}
+static int sum = 1;
+if (a == 0) {
+return sum;
+}
+else {
+sum = sum * a;
+return 0;
+}
 }
 
 int main()
 {
-	int num;
-	while (1) {
-		scanf("%d", &num);
-		if (num == 0)break;
-		else mul(num);
-	}
-	printf("%d", mul(num));
+int num;
+while (1) {
+scanf("%d", &num);
+if (num == 0)break;
+else mul(num);
+}
+printf("%d", mul(num));
 }
 ```
 
@@ -539,99 +539,99 @@ int main()
 /*
 int main()
 {
-	char ans;
-	int ans1;
-	int seat[10] = { 0 };
+char ans;
+int ans1;
+int seat[10] = { 0 };
 
-	while (1) {
-		printf("좌석을 예약하시겠습니까? (y또는n):\n");
-		scanf("%c", &ans);
+while (1) {
+printf("좌석을 예약하시겠습니까? (y또는n):\n");
+scanf("%c", &ans);
 
-		if (ans == 'n')break;
-		printf("----------------------\n");
-		printf("1 2 3 4 5 6 7 8 9 10\n");
-		printf("----------------------\n");
+if (ans == 'n')break;
+printf("----------------------\n");
+printf("1 2 3 4 5 6 7 8 9 10\n");
+printf("----------------------\n");
 
-		for (int i = 0; i < 10; i++) {
-			printf(" %d", seat[i]);
-		}
-		printf("\n");
+for (int i = 0; i < 10; i++) {
+printf(" %d", seat[i]);
+}
+printf("\n");
 
-		printf("몇번째 좌석을 예약하시겠습니까?");
-		scanf("%d", &ans1);
+printf("몇번째 좌석을 예약하시겠습니까?");
+scanf("%d", &ans1);
 
-		if (seat[ans1] == 0) {
-			seat[ans1-1] = 1;
-			printf("예약되었습니다.\n");
-		}
-		else printf("이미 예약된 자리입니다.\n");
+if (seat[ans1] == 0) {
+seat[ans1-1] = 1;
+printf("예약되었습니다.\n");
+}
+else printf("이미 예약된 자리입니다.\n");
 
-	}
-	return 0;
+}
+return 0;
 }*/
 
 //배열 사용해서 최소값 찾기
 /*
 int main()
 {
-	int a[10];
-	int min = 9999;
+int a[10];
+int min = 9999;
 
-	for (int i = 0; i < 10; i++) {
-		scanf("%d", &a[i]);
-	}
+for (int i = 0; i < 10; i++) {
+scanf("%d", &a[i]);
+}
 
-	for (int i = 0; i < 10; i++) {
-		if (a[i] < min)min = a[i];
-	}
+for (int i = 0; i < 10; i++) {
+if (a[i] < min)min = a[i];
+}
 
-	printf("%d", min);
-	return 0;
+printf("%d", min);
+return 0;
 }*/
 
 
 /*
 void cnt(int a[])
 {
-	for (int i = 0; i < 3; i++) {
-		a[i] = a[i] + 1;
-	}
+for (int i = 0; i < 3; i++) {
+a[i] = a[i] + 1;
+}
 }
 
 int main()
 {
-	int a[3] = { 1,2,3 };
-	cnt(a);
-	for (int i = 0; i < 3; i++) {
-		printf("%d ", a[i]);
-	}
+int a[3] = { 1,2,3 };
+cnt(a);
+for (int i = 0; i < 3; i++) {
+printf("%d ", a[i]);
+}
 }*/
 
 //선택정렬
 /*
 int main()
 {
-	int list[6] = { 5,3,8,1,2,7 };
-	int temp, min;
+int list[6] = { 5,3,8,1,2,7 };
+int temp, min;
 
-	for (int i = 0; i < 5; i++) {
-		min = i;
-		for (int j = i + 1; j < 6; j++) {
-			if (list[j] < list[min]) {
-				min = j;
-			}
-		}
+for (int i = 0; i < 5; i++) {
+min = i;
+for (int j = i + 1; j < 6; j++) {
+if (list[j] < list[min]) {
+min = j;
+}
+}
 
-		temp = list[i];
-		list[i] = list[min];
-		list[min] = temp;
-	}
+temp = list[i];
+list[i] = list[min];
+list[min] = temp;
+}
 
-	for (int i = 0; i < 6; i++) {
-		printf("%d ", list[i]);
-	}
+for (int i = 0; i < 6; i++) {
+printf("%d ", list[i]);
+}
 
-	return 0;
+return 0;
 }*/
 
 
@@ -639,89 +639,89 @@ int main()
 /*
 int main()
 {
-	int list[6] = { 5,3,8,1,2,7 };
-	int min;
-	int temp;
+int list[6] = { 5,3,8,1,2,7 };
+int min;
+int temp;
 
-	for (int i = 0; i < 5; i++) {
-		min = i;
-		for (int j = i + 1; j < 6; j++) {
-			if (list[j] < list[min]) {
-				min = j;
-			}
-		}
+for (int i = 0; i < 5; i++) {
+min = i;
+for (int j = i + 1; j < 6; j++) {
+if (list[j] < list[min]) {
+min = j;
+}
+}
 
-		temp = list[i];
-		list[i] = list[min];
-		list[min] = temp;
-	}
+temp = list[i];
+list[i] = list[min];
+list[min] = temp;
+}
 
-	            //  m
-	//list 값 1 2 3 5 7 8
-	       // 0 1 2 3 4 5
+            //  m
+//list 값 1 2 3 5 7 8
+       // 0 1 2 3 4 5
 
-	int a; //우리가 탐색하고 싶은 수
-	scanf("%d", &a);
-	int low=0, high=5, mid;
-	while (low <= high) {
-		mid = (low + high) / 2;
+int a; //우리가 탐색하고 싶은 수
+scanf("%d", &a);
+int low=0, high=5, mid;
+while (low <= high) {
+mid = (low + high) / 2;
 
-		if (a == list[mid]) {
-			printf("%d번째에 %d가 있다.", list[mid], a);
-			return 0;
-		}
+if (a == list[mid]) {
+printf("%d번째에 %d가 있다.", list[mid], a);
+return 0;
+}
 
-		else if (a > list[mid])low = mid + 1;
-		else high = mid - 1;
-	}
+else if (a > list[mid])low = mid + 1;
+else high = mid - 1;
+}
 }*/
 
 /*
 //2차원 배열 입력 받는 방법
 int main()
 {
-	int a[3][5];
+int a[3][5];
 
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 5; j++) {
-			scanf("%d", &a[i][j]);
-		}
-	}
+for (int i = 0; i < 3; i++) {
+for (int j = 0; j < 5; j++) {
+scanf("%d", &a[i][j]);
+}
+}
 
-	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < 5; j++) {
-			printf("%d ", a[i][j]);
-		}
-		printf("\n");
-	}
+for (int i = 0; i < 5; i++) {
+for (int j = 0; j < 5; j++) {
+printf("%d ", a[i][j]);
+}
+printf("\n");
+}
 }*/
 
 
 #include <math.h>
 void a() {
-	float arr[10] = { 0 , };
-	float p_1 = 0;
-	float p_2 = 0;
-	float sum_1 = 0;
-	float sum_2 = 0;
+float arr[10] = { 0 , };
+float p_1 = 0;
+float p_2 = 0;
+float sum_1 = 0;
+float sum_2 = 0;
 
-	for (int i = 0; i < 10; i++) {
-		scanf("%f", &arr[i]);
-		sum_1 = sum_1 + arr[i];
-	}
-	p_1= sum_1/10;//평균
-	
-	for (int i = 0; i < 10; i++) {
-		 sum_2=sum_2+(arr[i] - p_1) * (arr[i] - p_1);
-	}
-	p_2 = sqrt(sum_2 / 10);
-	printf("평균 = %.6f\n", p_1);
-	printf("표준편차 = %.6f", p_2);
+for (int i = 0; i < 10; i++) {
+scanf("%f", &arr[i]);
+sum_1 = sum_1 + arr[i];
+}
+p_1= sum_1/10;//평균
+
+for (int i = 0; i < 10; i++) {
+ sum_2=sum_2+(arr[i] - p_1) * (arr[i] - p_1);
+}
+p_2 = sqrt(sum_2 / 10);
+printf("평균 = %.6f\n", p_1);
+printf("표준편차 = %.6f", p_2);
 
 }
 
 int main() {
-	a();
+a();
 }
 ```
 ### 10주차 시험 코드
@@ -735,57 +735,57 @@ int result = 1;
 
 int mul(int num)
 {
-	result = result*num;
-	return result;
+result = result*num;
+return result;
 }
 
 int main()
 {
-	int num;
-	while (1) {
-		scanf("%d", &num);
-		if (num == 0)break;
-		mul(num);
-	}
-	printf("%d", result);
+int num;
+while (1) {
+scanf("%d", &num);
+if (num == 0)break;
+mul(num);
+}
+printf("%d", result);
 }*/
 
 //2
 /*
 int sum(int num)
 {
-	static int result = 0;
-	result = result + num;
-	return result;
+static int result = 0;
+result = result + num;
+return result;
 }
 
 int main()
 {
-	int num;
-	int result;
-	while (1) {
-		scanf("%d", &num);
-		if (num == 999)break;
-		result = sum(num);
-	}
-	printf("%d", result);
-	return 0;
+int num;
+int result;
+while (1) {
+scanf("%d", &num);
+if (num == 999)break;
+result = sum(num);
+}
+printf("%d", result);
+return 0;
 }*/
 
 //3번
 /*
 int fac(int num)
 {
-	if (num <= 1)return 1;
-	else return num * fac(num - 1);
+if (num <= 1)return 1;
+else return num * fac(num - 1);
 
 }
 int main()
 {
-	int num;
-	scanf("%d", &num);
-	printf("%d", fac(num));
-	return 0;
+int num;
+scanf("%d", &num);
+printf("%d", fac(num));
+return 0;
 }*/
 
 
@@ -793,41 +793,41 @@ int main()
 /*
 int main()
 {
-	int num = 0;
-	int sum = 0;
-	int a[5] = { 0 };
+int num = 0;
+int sum = 0;
+int a[5] = { 0 };
 
-	for (int i = 0; i < 5; i++) {
-		scanf("%d", &num);
-		a[i] = num;
-	}
+for (int i = 0; i < 5; i++) {
+scanf("%d", &num);
+a[i] = num;
+}
 
-	for (int i = 0; i < 5; i++) {
-		sum = sum + a[i];
-	}
+for (int i = 0; i < 5; i++) {
+sum = sum + a[i];
+}
 
-	printf("%d", sum / 5);
-	return 0;
+printf("%d", sum / 5);
+return 0;
 }*/
 
 //5번
 /*
 int main()
 {
-	int max = 0;
-	int num;
-	int a[5];
+int max = 0;
+int num;
+int a[5];
 
-	for (int i = 0; i < 5; i++) {
-		scanf("%d", &num);
-		a[i] = num;
-	}
+for (int i = 0; i < 5; i++) {
+scanf("%d", &num);
+a[i] = num;
+}
 
-	for (int i = 0; i < 5; i++) {
-		if (a[i] > max)max = a[i];
-	}
-	printf("%d", max);
-	return 0;
+for (int i = 0; i < 5; i++) {
+if (a[i] > max)max = a[i];
+}
+printf("%d", max);
+return 0;
 }*/
 
 
@@ -883,11 +883,11 @@ int main()
 ```javascript
 int add(int a, int b)
 { 
-	return a+b;
+return a+b;
 }
 int main()
 { 
-	int a, b; a=2; b=3; int sum = add(a,b); printf("%d",sum);
+int a, b; a=2; b=3; int sum = add(a,b); printf("%d",sum);
 }
 ```
 이 코드에서는 add 함수가 return으로 매개변수 a와 b를 합한 값을 main 중 변수 sum에 반환해주었죠??
@@ -923,26 +923,26 @@ B는 a에 들어있던 쓰레기값으로 계산이 완료된채로 남아있겠
 ```c
 int main()
 {
-	int list[5] = { 0 };
-	int min, temp;
-	for (int i = 0; i < 5; i++) {
-		scanf("%d", &list[i]);
-	}
-	for (int i = 0; i < 4; i++) {
-		min = i;
-		for (int j = i + 1; j < 5; j++) {
-			if (list[j] > list[min]) {
-				min = j;
-			}
-		}
-		temp = list[i];
-		list[i] = list[min];
-		list[min] = temp;
-	}
+int list[5] = { 0 };
+int min, temp;
+for (int i = 0; i < 5; i++) {
+scanf("%d", &list[i]);
+}
+for (int i = 0; i < 4; i++) {
+min = i;
+for (int j = i + 1; j < 5; j++) {
+if (list[j] > list[min]) {
+min = j;
+}
+}
+temp = list[i];
+list[i] = list[min];
+list[min] = temp;
+}
 
-	for (int i = 0; i < 5; i++) {
-		printf("%d ", list[i]);
-	}
+for (int i = 0; i < 5; i++) {
+printf("%d ", list[i]);
+}
 }
 ```
 ### 2번
@@ -952,28 +952,28 @@ A,B,C 총 3명의 친구들의 국어, 수학, 영어, 과학, 사회 총 5과�
 ```c
 int main()
 {
-	int score[3][5] = { 0 };
-	int sum[3] = { 0 };
+int score[3][5] = { 0 };
+int sum[3] = { 0 };
 
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 5; j++) {
-			scanf("%d", &score[i][j]);
-		}
-	}
+for (int i = 0; i < 3; i++) {
+for (int j = 0; j < 5; j++) {
+scanf("%d", &score[i][j]);
+}
+}
 
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 5; j++) {
-			sum[i] += score[i][j];
-		}
-		sum[i] = sum[i] / 5;
-	}
+for (int i = 0; i < 3; i++) {
+for (int j = 0; j < 5; j++) {
+sum[i] += score[i][j];
+}
+sum[i] = sum[i] / 5;
+}
 
-	int max = 0;
-	for (int i = 0; i < 3; i++) {
-		if (max < sum[i])max = sum[i];
-	}
-	printf("%d", max);
-	return 0;
+int max = 0;
+for (int i = 0; i < 3; i++) {
+if (max < sum[i])max = sum[i];
+}
+printf("%d", max);
+return 0;
 }
 ```
 ### 3번
@@ -986,23 +986,23 @@ Palindrome 문자열은 앞에서부터 읽었을 떄와 뒤에서부터 읽었�
 ```c
 int main()
 {
-	int size = 0;
-	int num[10] = { 0 };
-	scanf("%d", &size);
+int size = 0;
+int num[10] = { 0 };
+scanf("%d", &size);
 
-	for (int i = 0; i < size; i++) {
-		scanf("%d", &num[i]);
-	}
+for (int i = 0; i < size; i++) {
+scanf("%d", &num[i]);
+}
 
-	int cnt = 0;
-	for (int i = 0; i < size / 2; i++) {
-		if (num[i] == num[size - i-1])cnt++;
-	}
+int cnt = 0;
+for (int i = 0; i < size / 2; i++) {
+if (num[i] == num[size - i-1])cnt++;
+}
 
-	if (cnt == size / 2) {
-		printf("%d", 1);
-	}
-	else printf("%d", 0);
+if (cnt == size / 2) {
+printf("%d", 1);
+}
+else printf("%d", 0);
 }
 ```
 ### 4번
@@ -1012,23 +1012,23 @@ int main()
 ```c
 int main()
 {
-	char a[100] = { 0 };
-	int b = 0;
-	int i = 0;
-	while (1) {
-		scanf("%c", &a[i]);
-		if (a[i] == '@') {
-			a[i] = 0;
-			break;
-		}
-		i++;
-	}
-	
-	for (int j = i; j >= 0; j--) {
-		printf("%c", a[j]);
-	}
+char a[100] = { 0 };
+int b = 0;
+int i = 0;
+while (1) {
+scanf("%c", &a[i]);
+if (a[i] == '@') {
+a[i] = 0;
+break;
+}
+i++;
+}
 
-	return 0;
+for (int j = i; j >= 0; j--) {
+printf("%c", a[j]);
+}
+
+return 0;
 }
 ```
 ### 5번
@@ -1040,27 +1040,27 @@ int main()
 ```c
 int main()
 {
-	char s[10] = { 0 };
+char s[10] = { 0 };
 
-	for (int i = 0; i < 10; i++) {
-		scanf("%c", &s[i]);
-	}
+for (int i = 0; i < 10; i++) {
+scanf("%c", &s[i]);
+}
 
-	int change = 'A' - 'a';
+int change = 'A' - 'a';
 
-	for (int i = 0; i < 10; i++) {
-		if (s[i] >= 'a' && s[i] <= 'z') {
-			s[i] = s[i] + change;
-		}
-		else if (s[i] >= 'A' && s[i] <= 'Z') {
-			s[i] = s[i] - change;
-		}
-	}
+for (int i = 0; i < 10; i++) {
+if (s[i] >= 'a' && s[i] <= 'z') {
+s[i] = s[i] + change;
+}
+else if (s[i] >= 'A' && s[i] <= 'Z') {
+s[i] = s[i] - change;
+}
+}
 
-	for (int i = 0; i < 10; i++) {
-		printf("%c", s[i]);
-	}
-	return 0;
+for (int i = 0; i < 10; i++) {
+printf("%c", s[i]);
+}
+return 0;
 }
 ```
 ### 6번
@@ -1070,17 +1070,17 @@ main함수에서 두 수를 입력받고 그 수를 swap함수를 통해 서로 
 ```c
 void swap(int* a, int* b)
 {
-	int temp;
-	temp = *a;
-	*a = *b;
-	*b = temp;
+int temp;
+temp = *a;
+*a = *b;
+*b = temp;
 }
 int main()
 {
-	int a, b;
-	scanf("%d %d", &a, &b);
-	swap(&a, &b);
-	printf("%d %d", a, b);
+int a, b;
+scanf("%d %d", &a, &b);
+swap(&a, &b);
+printf("%d %d", a, b);
 }
 ```
 ### 7번
@@ -1090,34 +1090,34 @@ main함수에서 데이터 타입이 정수인 두개의 배열을 입력 받아
 ```c
 void swap(int* num1, int* num2,int size)
 {
-	int temp = 0;
-	for (int i = 0; i < size; i++) {
-		temp = num1[i];
-		num1[i] = num2[i];
-		num2[i] = temp;
-	}
+int temp = 0;
+for (int i = 0; i < size; i++) {
+temp = num1[i];
+num1[i] = num2[i];
+num2[i] = temp;
+}
 }
 
 int main()
 {
-	int num1[100] = { 0 }, num2[100] = { 0 };
-	int size;
-	scanf("%d", &size);
+int num1[100] = { 0 }, num2[100] = { 0 };
+int size;
+scanf("%d", &size);
 
-	for (int i = 0; i < size; i++) {
-		scanf("%d", &num1[i]);
-	}
-	for (int i = 0; i < size; i++) {
-		scanf("%d", &num2[i]);
-	}
+for (int i = 0; i < size; i++) {
+scanf("%d", &num1[i]);
+}
+for (int i = 0; i < size; i++) {
+scanf("%d", &num2[i]);
+}
 
-	swap(num1,num2,size);
-	for (int i = 0; i < size; i++) {
-		printf("%d ", num1[i]);
-	}
-	printf("\n");
-	for (int i = 0; i < size; i++) {
-		printf("%d ", num2[i]);
-	}
+swap(num1,num2,size);
+for (int i = 0; i < size; i++) {
+printf("%d ", num1[i]);
+}
+printf("\n");
+for (int i = 0; i < size; i++) {
+printf("%d ", num2[i]);
+}
 }
 ```
