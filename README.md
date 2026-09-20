@@ -1,23 +1,17 @@
-# C Programming — Teaching Assistant
+<p align="center"><img src="./course-panel.svg" width="100%" alt="C PROGRAMMING TA panel"/></p>
 
-C 프로그래밍 TA 세션에서 다룬 공개 가능한 학습 주제를 정리한 저장소입니다.
+# C PROGRAMMING TA
 
-## Session Flow
+TA 활동에서 실제로 사용한 설명·실습·질의응답 기록을 복원한 공개 아카이브입니다.
 
-1. 핵심 개념 복습
-2. 예제 기반 실습
-3. 질의응답과 오류 분석
+## Archive
 
-## Topics
+- [전체 TA 자료 보기](./FULL_NOTES.md)
+- 총 **16개 페이지**의 기록 수록
+- 수업 내용, 코드, 문제 풀이와 설명은 유지
+- 학생 이름·학번·이메일·전화번호·점수·채점표만 제거
 
-- 자료형과 형 변환
-- 문자와 문자열
-- 표준 입력 함수
-- 조건문과 반복문
-- 함수, 반환형, 매개변수
-- 배열과 포인터 기초
-- 컴파일 경고 확인
+## Scope
 
-## Privacy
+`TYPE` · `STRING` · `FUNCTION` · `POINTER`
 
-학생 이름·학번·연락처·점수·채점표·일정·오픈채팅·Discord·수업 링크와 시험 문제는 포함하지 않습니다.
